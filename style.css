@@ -6,8 +6,14 @@ body {
   height: 100vh;
 }
 h1 {
-  color: white;
+  font-size: 48px;
+  font-weight: 800;
+  color: #ff6f00; /* Deep warm orange */
+  margin: 20px 0;
+  text-align: center;
+  letter-spacing: 3px;
   text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #board {
@@ -34,4 +40,39 @@ h1 {
 }
 .yellow-piece {
   background-color: yellow;
+}
+.winning-tile {
+  box-shadow: 0 0 10px 5px gold;
+  transform: scale(1.1);
+}
+
+#winner {
+  font-size: 26px;
+  font-weight: 900;
+  color: #333333;
+  background: linear-gradient(to right, #fff3b0, #ffd27f);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+#play-again-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: linear-gradient(to right, #fdd835, #ff8f00);
+
+  display: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#play-again-btn:hover {
+  background: linear-gradient(to right, #ffe066, #ff9933);
+  transform: scale(1.05);
 }
